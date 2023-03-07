@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Nunito:wght@500;600&display=swap");
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fefefe;
+  scroll-behavior: smooth;
+  font-family: "Nunito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+  font-family: "Acme", sans-serif;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+.toggle {
+  font-size: 1.5rem;
+}
+
+.dark-mode .toggle {
+  color: #fefefe;
+}
+
+.dark-mode {
+  background-color: #212529;
+}
+
+.dark-mode h1 {
+  color: #fefefe;
+}
+
+.container {
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.note.new {
+  background: #fdffb6;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background: transparent;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.note {
+  background: #caffbf;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+  gap: 0.5rem;
+}
+
+.search input {
+  border: none;
+  background-color: rgb(233, 233, 233);
+  width: 100%;
+  font-size: 1rem;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+i {
+  font-size: 1.1rem;
+}
